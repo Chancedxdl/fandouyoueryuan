@@ -10,7 +10,7 @@
 			}
 			
 			#outer{
-				width: 500px;
+				width: 800px;
 				margin: 50px auto;
 				padding: 10px;
 				background-color: skyblue;
@@ -42,7 +42,7 @@
 					next.onclick=function(){
 						index++;
 						if(index>imgArr.length-1){
-							index=0;
+							index=imgArr.length-1;
 						}
 						inp.innerHTML="一共有"+imgArr.length+"张图片，当前第"+(index+1)+"张";
 						img.src=imgArr[index];
@@ -54,7 +54,7 @@
 		<div id="outer">
 			<h1>小智的后宫</h1>
 			<p id="info"></p>
-			<img src="xiaozhi/2.jpg" alt="小智的后宫" width="500px" height="500px" >
+			<img src="xiaozhi/2.jpg" alt="小智的后宫" width="800px" height="1250px" >
 			<button type="button" id="prev">上一张</button>
 			<button type="button" id="next">下一张</button>
 		</div>
